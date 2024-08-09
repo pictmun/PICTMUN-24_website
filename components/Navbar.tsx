@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <nav className="bg-white bg-opacity-70 backdrop-blur-md py-2">
+    <nav className="bg-transparent bg-opacity-70 backdrop-blur-md py-2 fixed top-0 left-0 right-0">
       <div className="container mx-auto flex items-center justify-between">
         <div className="relative w-14 h-14">
           <Image
@@ -14,7 +14,7 @@ const Navbar = () => {
             objectFit="contain"
           />
         </div>
-        <ul className="flex space-x-7 text-base font-medium text-gray-700">
+        <ul className="flex space-x-7 text-base font-medium text-white">
           <li>
             <Link href="/">Home
             </Link>
