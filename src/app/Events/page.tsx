@@ -1,81 +1,21 @@
-'use client'
-import { RiMenu3Fill } from "react-icons/ri";
-import { RxCross1 } from "react-icons/rx";
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
+import Card from "../../../components/Events/Card";
 
-const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navLinks=[{
-    name:"Home",
-    link:"/"
-  },
-{
-  name:"About",
-  link:"/Aboutus"
-},
-{
-  name:"Events",
-  link:"/Events"
-},
-{
-  name:"Inquisitor",
-  link:"/Inquisitor"
-},
-{
-  name:"Gallery",
-  link:"/Gallery"
-},
-{
-  name:"Contact",
-  link:"/Contact"
-}]
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+export default function Page() {
   return (
-    <nav className="bg-darkblue relative py-2 z-30">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link href={"/"} className="relative w-14 h-14">
-          <Image
-            src="/images/golden-logo.png"
-            alt="logo"
-            layout="fill"
-            objectFit="contain"
-          />
-        </Link>
-        {/* Website navbar */}
-        <ul className="md:flex hidden space-x-7 text-base font-medium text-gray-700 text-white">
-          {navLinks.map((link)=>(
-            <li className='hover:text-skin' key={link.name}>
-              <Link href={link.link}>{link.name}</Link>
-            </li>
-          ))}
-        
-        </ul>
-        {/* Mobile navbar */}
-        <div
-          className={`fixed top-0 right-0 w-[300px] h-screen bg-skin z-60 transition-transform duration-300 ${
-            isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-          } md:hidden`}
-        >
-          <RxCross1 fontSize={36} className="absolute top-4 right-4 cursor-pointer text-white rounded-full hover:opacity-80 font-bold" onClick={toggleMobileMenu}/>
-          <ul className='flex flex-col gap-4 py-16 px-5 text-xl text-white font-medium'>
-            {navLinks.map((link)=>(
-              <li className='hover:text-midblue border-b-2 p-2 border-white' key={link.name}>
-                <Link onClick={toggleMobileMenu} href={link.link}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <button onClick={toggleMobileMenu} className="inline-block md:hidden">
-          <RiMenu3Fill className="text-3xl text-white" />
-        </button>
+    <>
+    <section className=" py-6 px-4 bg-darkblue text-white min-h-screen overflow-x-hidden">
+      <h3 className="text-4xl font-semibold text-center">Events</h3>
+      <div className="relative">
+        {/* Background patterns */}
+        {/* Top one */}
+      <img src="/images/bg-pattern.png"  alt="" className="hidden md:block absolute top-[30%] lg:top-[20%] w-[900px] overflow-hidden right-[-20%] rotate-[-20deg]"/>
+      {/* top two */}
+      <img src="/images/bg-pattern.png"  alt="" className="hidden md:block absolute top-[35%] left-[-50%]  lg:top-[38%] w-[900px]  overflow-hidden lg:left-[-35%] rotate-[-20deg]"/>
+{/* Card component -> /components/Events/Card */}
+      <Card right={false} title={'title'} description={"The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."} bgImage={'/images/un-image.png'}/>
+      <Card right={true} title={'title'} description={"The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."} bgImage={'/images/un-image.png'}/>
       </div>
-    </nav>
+    </section>
+    </>
   );
-};
-
-export default Navbar;
+}
