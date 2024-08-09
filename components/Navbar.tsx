@@ -36,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-darkblue relative py-2 z-30">
+    <nav className="bg-darkblue fixed top-0 left-0 right-0 py-2 z-30">
       <div className="container mx-auto flex items-center justify-between">
         <Link href={"/"} className="relative w-14 h-14">
           <Image
