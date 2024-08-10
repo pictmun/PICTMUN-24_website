@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inconsolata, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from '../../components/Navbar';
 import Head from 'next/head'; 
 import { Footer } from "../../components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inconsolata = Inconsolata({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +24,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="../../public/favicon.ico" />
       </Head>
-      <body className={inter.className}>
+      <body className={inconsolata.className}>
         <Navbar/>
         {children}
         <Footer />
