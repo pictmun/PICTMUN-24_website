@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,30 +11,31 @@ const config: Config = {
     extend: {
       keyframes: {
         slideInLeft: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
       slideInRight: {
-        '0%': { transform: 'translateX(100%)' },
-        '100%': { transform: 'translateX(0)' },
+        "0%": { transform: "translateX(100%)" },
+        "100%": { transform: "translateX(0)" },
       },
+
       animation: {
-        slideInLeft: 'slideInLeft 0.5s ease-out forwards',
-         slideInRight: 'slideInRight 1.5s ease-out forwards',
+        slideInLeft: "slideInLeft 0.5s ease-out forwards",
+        slideInRight: "slideInRight 1.5s ease-out forwards",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors :{
-        'white' : '#F9F8F7',
-        'skin':'#CBA55C',
-        'lightblue':'#ADB8BB',
-        'midblue':'#153147',
-        'darkblue':'#232A2F',
-  
+
+      colors: {
+        white: "#F9F8F7",
+        skin: "#CBA55C",
+        lightblue: "#ADB8BB",
+        midblue: "#153147",
+        darkblue: "#232A2F",
       },
     },
   },
