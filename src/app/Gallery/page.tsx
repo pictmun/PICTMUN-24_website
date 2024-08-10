@@ -1,6 +1,6 @@
 "use client"; // Place this at the top
 
-import Gallery from "../../../components/Gallery/card";
+import Gallery from '../../../components/Gallery/Card';
 import { useState } from 'react';
 
 export default function Page() {
