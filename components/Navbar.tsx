@@ -4,7 +4,6 @@ import { RxCross1 } from "react-icons/rx";
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import { link } from "fs";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,8 +28,8 @@ const Navbar = () => {
   link:"/Gallery"
 },
 {
-  name:'Team',
-  link:'/Team'
+  name:"Team",
+  link:"/Team"
 }
 ]
   const toggleMobileMenu = () => {

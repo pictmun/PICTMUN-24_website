@@ -1,13 +1,38 @@
-
-import { Inconsolata } from 'next/font/google';
-
-const inconsolata = Inconsolata({
-  subsets: ['latin'],
-});
+'use client'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Home() {
+  const highlights = [
+  {
+    id: 1,
+    title: "Highlight 1",
+    description: "This is the first highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+  {
+    id: 2,
+    title: "Highlight 2",
+    description: "This is the second highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+  {
+    id: 3,
+    title: "Highlight 3",
+    description: "This is the third highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+{
+    id: 3,
+    title: "Highlight 3",
+    description: "This is the third highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },]
   return (
-    <div className={`${inconsolata.className} overflow-x-hidden overflow-y-auto`}>
+    <div className={` overflow-x-hidden overflow-y-auto`}>
       <div className="h-screen bg-darkblue text-white relative">
         <img src="/images/home-bg.png" alt="hero-banner" className='opacity-40 absolute top-0 left-0 right-0 bottom-0 z-0 w-full h-full object-contain scale-75' />
         <div className='absolute left-0 right-0 top-0 bottom-0 text-center content-center'>
@@ -22,37 +47,45 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="lg:h-screen text-zinc-900 bg-darkblue">
-        <div className='bg-lightblue bg-opacity-40 w-full h-full flex flex-col p-[50px] lg:py-[100px] lg:px-[250px]'>
-          <div className="text-center">
-            <h1 className="text-3xl lg:text-6xl font-[600] text-white">About The Club</h1>
-          </div>
-          <div className="flex-none h-[30px] lg:h-[50px]"></div>
-          <div className="grid grid-cols-2 h-full gap-[75px]">
-            <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
-              <div className='w-full h-full flex flex-col'>
-                <div className="grow"></div>
-                <p className='leading-7 text-md lg:text-3xl text-[#0b1d2b]'>
-                  The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
-                </p>
-                <div className="grow"></div>
-              </div>
-            </div>
-            <div className="col-span-1 bg-zinc-900 bg-opacity-30 h-full rounded-md shadow-lg hidden lg:block" style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}></div>
-          </div>
+      <div className='bg-darkblue'>
+      <div className="relative lg:h-screen text-zinc-200 bg-white bg-opacity-25 p-[50px] lg:py-[100px] lg:px-[250px] flex flex-col">
+       
+        <div className="text-center">
+          <h1 className="text-3xl lg:text-4xl font-[600]">About the Club</h1>
         </div>
+        <div className="flex-none h-[30px] lg:h-[50px]"></div>
+        <div className="grid grid-cols-2 h-full gap-[75px]">
+          
+          <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
+            <div className='w-full h-full flex flex-col'>
+              <div className="grow"></div>
+              <p className='leading-7 text-base lg:text-base text-[#ADB8BB]'>
+                The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
+              </p>
+              <div className="grow"></div>
+            </div>
+          </div>
+          <div className="col-span-1 bg-zinc-900 bg-opacity-30 h-full rounded-md shadow-lg hidden lg:block" style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}></div>
+        </div>
+<div className='hidden lg:block'>
+        <div className="block lg:hidden bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-full h-[200px] md:h-[400px] mt-[50px]" style={{
+          backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}></div>
+</div>
+      </div>
       </div>
 
       <div className="relative lg:h-screen text-zinc-200 bg-darkblue p-[50px] lg:py-[100px] lg:px-[250px] flex flex-col">
-        <img src="/images/bg-pattern.png"  alt="" className="z-[0] hidden lg:block absolute w-[900px] opacity-80 overflow-hidden top-[-3%] left-[-5%] rotate-[5deg]"/>
+        <img src="/images/bg-pattern.png"  alt="" className="z-[0] hidden lg:block absolute w-[900px] opacity-80 overflow-hidden top-[-5%] left-[-20%] rotate-[5deg]"/>
 
         <div className="text-center">
-          <h1 className="text-3xl lg:text-6xl font-[600]">Our Newsletter - The Inquisitor</h1>
+          <h1 className="text-3xl lg:text-4xl font-[600]">Our Newsletter - The Inquisitor</h1>
         </div>
         <div className="flex-none h-[30px] lg:h-[50px]"></div>
         <div className="grid grid-cols-2 h-full gap-[75px]">
@@ -64,8 +97,8 @@ export default function Home() {
           <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
             <div className='w-full h-full flex flex-col'>
               <div className="grow"></div>
-              <p className='leading-7 text-md lg:text-3xl text-[#ADB8BB]'>
-                The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
+              <p className='leading-7 text-base lg:text-base text-[#ADB8BB]'>
+                The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
               </p>
               <div className="grow"></div>
             </div>
@@ -78,67 +111,51 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}></div>
       </div>
-
-      <div className="relative lg:h-screen text-zinc-900 bg-darkblue overflow-hidden">
-        <img src="/images/bg-pattern.png"  alt="" className="z-[0] hidden lg:block absolute w-[900px] opacity-80 overflow-hidden bottom-[-3%] right-[-5%] rotate-[180deg]"/>
-
-        <div className='bg-lightblue p-[50px] lg:py-[100px] lg:px-[250px] flex flex-col w-full h-full bg-opacity-40'>
-          <div className="text-center">
-            <h1 className="text-3xl lg:text-6xl font-[600] text-white">Highlights</h1>
-          </div>
-          <div className="flex-none h-[30px] lg:h-[50px]"></div>
-          <div className='block md:hidden'>
-            <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-full h-[200px] my-[10px]" style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}></div>
-            <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-full h-[200px] my-[10px]" style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}></div>
-            <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-full h-[200px] my-[10px]" style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}></div>
-          </div>
-          <div className='hidden md:block lg:hidden'>
-            <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-full h-[500px] my-[10px]" style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-            }}></div>
-          </div>
-          <div className='hidden lg:block'>
-            <div className='flex'>
-              <div className='grow'></div>
-              <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-[600px] h-[400px]" style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-              }}></div>
-              <div className='w-[60px]'></div>
-              <div className="bg-zinc-900 bg-opacity-30 rounded-md shadow-lg w-[600px] h-[400px]" style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-              }}></div>
-              <div className='grow'></div>
-            </div>
-            <div className='absolute top-[450px] left-0 right-0 z-50 flex'>
-              <div className="grow"></div>
-              <div className="bg-zinc-900 bg-opacity-30 w-[600px] h-[400px] rounded-md shadow-lg" style={{
-                backgroundImage: `url(https://images.unsplash.com/photo-1723117509226-9191b2c0f703?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-              }}></div>
-              <div className="grow"></div>
-            </div>
-          </div>
-        </div>
+      {/* Highlights Section */}
+      <div className="bg-darkblue py-[50px] lg:py-[100px] px-[50px] lg:px-[250px] text-white">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-8">Highlights</h2>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled',
+          }}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          centeredSlides={true}
+          loop={true}
+        >
+          {highlights.map((highlight) => (
+            <SwiperSlide key={highlight.id}>
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img src={highlight.image} alt={highlight.title} className="w-full h-64 object-cover" />
+                
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* Navigation buttons */}
+          <div className="swiper-button-next hidden lg:block"></div>
+          <div className="swiper-button-prev hidden lg:block"></div>
+        </Swiper>
       </div>
+
+  
+
+      
     </div>
   );
 }
