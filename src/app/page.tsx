@@ -1,5 +1,36 @@
+'use client'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Home() {
+  const highlights = [
+  {
+    id: 1,
+    title: "Highlight 1",
+    description: "This is the first highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+  {
+    id: 2,
+    title: "Highlight 2",
+    description: "This is the second highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+  {
+    id: 3,
+    title: "Highlight 3",
+    description: "This is the third highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },
+{
+    id: 3,
+    title: "Highlight 3",
+    description: "This is the third highlight.",
+    image: "https://via.placeholder.com/600x300", // Replace with actual image
+  },]
   return (
     <div className={` overflow-x-hidden overflow-y-auto`}>
       <div className="h-screen bg-darkblue text-white relative">
@@ -80,6 +111,49 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
         }}></div>
       </div>
+      {/* Highlights Section */}
+      <div className="bg-darkblue py-[50px] lg:py-[100px] px-[50px] lg:px-[250px] text-white">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-8">Highlights</h2>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled',
+          }}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          centeredSlides={true}
+          loop={true}
+        >
+          {highlights.map((highlight) => (
+            <SwiperSlide key={highlight.id}>
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img src={highlight.image} alt={highlight.title} className="w-full h-64 object-cover" />
+                
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* Navigation buttons */}
+          <div className="swiper-button-next hidden lg:block"></div>
+          <div className="swiper-button-prev hidden lg:block"></div>
+        </Swiper>
+      </div>
+
+  
 
       
     </div>
