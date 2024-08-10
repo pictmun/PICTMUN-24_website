@@ -30,7 +30,7 @@ const Navbar = () => {
 },
 {
   name:'Teams',
-  link:'/Teams'
+  link:'/Team'
 }
 ]
   const toggleMobileMenu = () => {
