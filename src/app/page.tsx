@@ -16,9 +16,9 @@ export default function Home() {
           <h1 className="text-2xl lg:text-2xl text-zinc-400">Think, Discuss, Prosper</h1>
           <div className="h-[25px]"></div>
           <div>
-            <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Register</button>
+            <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px]  border-zinc-950  shadow-lg">Register</button>
             <div className='md:hidden h-[15px]' />
-            <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 md:ml-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Events</button>
+            <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 md:ml-[12.5px] border-[1.5px]  border-zinc-950  shadow-lg">Events</button>
           </div>
         </div>
       </div>
