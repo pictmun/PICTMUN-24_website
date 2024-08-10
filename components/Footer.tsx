@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 
 
@@ -13,17 +14,17 @@ export function Footer() {
           <div className="flex items-center">
             <GrInstagram />
             <div className="w-[10px]"></div>
-            <h1 className='text-lg'>@pictmun</h1>
+            <Link target="_blank" href="https://www.instagram.com/pictmun/" className='text-lg'>@pictmun</Link>
           </div>
           <div className="flex items-center">
             <GrLinkedin />
             <div className="w-[10px]"></div>
-            <h1 className='text-lg'>@PICT Model United Nations</h1>
+            <Link target="_blank" href="https://www.linkedin.com/company/pict-model-united-nations/mycompany/" className='text-lg'>@PICT Model United Nations</Link>
           </div>
         </div>
         <div className="md:flex-none md:text-right mt-[10px] md:mt-0">
-          <h1 className='text-lg'>Ph: +123456789</h1>
-          <h1 className='text-lg'>+123456789</h1>
+          <h1 className='text-lg'>Nirbhay Shah - <Link target="_blank" href="tel:+917020899506" className='text-lg  hover:text-skin hover:underline'>+917020899506</Link></h1>
+          <h1 className='text-lg'>Sholka Shetty - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-skin hover:underline'>+918591605958</Link></h1>
         </div>
       </div>
     </footer>
