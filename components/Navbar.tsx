@@ -27,10 +27,7 @@ const Navbar = () => {
   name:"Gallery",
   link:"/Gallery"
 },
-{
-  name:"Contact",
-  link:"/Contact"
-}]
+]
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
