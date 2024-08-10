@@ -36,10 +36,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-darkblue relative py-2 z-30">
+    <nav className="bg-darkblue fixed top-0 left-0 right-0 py-2 z-30">
       <div className="container mx-auto flex items-center justify-between">
         <Link href={"/"} className="relative w-14 h-14">
           <Image
+            className="pl-[10px] pt-[10px]"
             src="/images/golden-logo.png"
             alt="logo"
             layout="fill"
@@ -47,7 +48,7 @@ const Navbar = () => {
           />
         </Link>
         {/* Website navbar */}
-        <ul className="md:flex hidden space-x-7 text-base font-medium text-gray-700 text-white">
+        <ul className="md:flex hidden space-x-7 text-base font-medium text-white">
           {navLinks.map((link)=>(
             <li className='hover:text-skin' key={link.name}>
               <Link href={link.link}>{link.name}</Link>
@@ -57,7 +58,7 @@ const Navbar = () => {
         </ul>
         {/* Mobile navbar */}
         <div
-          className={`fixed top-0 right-0 w-[300px] h-screen bg-skin z-60 transition-transform duration-300 ${
+          className={`fixed top-0 right-0 w-[300px] h-screen bg-[#ac8846] z-60 transition-transform duration-300 ${
             isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } md:hidden`}
         >
@@ -71,7 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
         <button onClick={toggleMobileMenu} className="inline-block md:hidden">
-          <RiMenu3Fill className="text-3xl text-white" />
+          <RiMenu3Fill className="text-3xl text-white pt-[5px] pr-[5px]" />
         </button>
       </div>
     </nav>
