@@ -29,8 +29,8 @@ const Navbar = () => {
   link:"/Gallery"
 },
 {
-  name:'Teams',
-  link:'/Teams'
+  name:'Team',
+  link:'/Team'
 }
 ]
   const toggleMobileMenu = () => {
