@@ -8,7 +8,7 @@ const inconsolata = Inconsolata({
 
 export function Footer() {
   return (
-    <div className={`text-zinc-200 bg-darkblue p-[50px] lg:p-[100px] flex flex-col ${inconsolata.className}`}>
+    <div className={`text-zinc-200 bg-darkblue p-[50px] lg:px-[100px] lg:py-[75px] flex flex-col ${inconsolata.className}`}>
       <h1 className="text-2xl lg:text-3xl font-bold">Connect With Us!</h1>
       <div className="h-[15px] md:h-[25px]"></div>
       <div className="md:flex text-zinc-300">
