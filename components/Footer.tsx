@@ -7,7 +7,7 @@ import { GrInstagram, GrLinkedin } from "react-icons/gr";
 export function Footer() {
   return (
     <footer className={`text-zinc-200 bg-darkblue p-[50px] lg:px-[100px] lg:py-[35px] flex flex-col`}>
-      <h1 className="text-2xl lg:text-3xl font-bold">Connect With Us!</h1>
+      <h1 className="text-2xl lg:text-2xl font-bold">Connect With Us!</h1>
       <div className="h-[15px] md:h-[25px]"></div>
       <div className="md:flex text-zinc-300">
         <div className="md:grow">

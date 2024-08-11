@@ -13,11 +13,7 @@ export default function Page() {
       <div className="relative">
         {/* Background patterns */}
         {/* Top one */}
-        <img
-          src="/images/bg-pattern.png"
-          alt=""
-          className="hidden md:block absolute top-[30%] lg:top-[20%] w-[900px] overflow-hidden right-[-20%] rotate-[-20deg]"
-        />
+        
         {/* top two */}
         <img
           src="/images/bg-pattern.png"

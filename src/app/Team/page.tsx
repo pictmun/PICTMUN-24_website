@@ -18,7 +18,7 @@ export default function Page() {
       <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/Anshika_Singh.jpg"}/>
       <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/Anshika_Singh.jpg"}/>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-16">
       <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/Anshika_Singh.jpg"}/>
       <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/Anshika_Singh.jpg"}/>
       <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/Anshika_Singh.jpg"}/>
