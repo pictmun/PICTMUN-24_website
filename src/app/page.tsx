@@ -4,6 +4,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 export default function Home() {
   const highlights = [
@@ -41,9 +42,13 @@ export default function Home() {
           <h1 className="text-2xl lg:text-2xl text-zinc-400">Think, Discuss, Prosper</h1>
           <div className="h-[25px]"></div>
           <div>
-            <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Register</button>
+            <Link href="/">
+            <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md hover:scale-105 transition-all duration-300 bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Register</button>
+            </Link>
             <div className='md:hidden h-[15px]' />
-            <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 md:ml-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Events</button>
+            <Link href="/events">
+            <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 hover:scale-105 transition-all duration-300 md:ml-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Events</button>
+            </Link>
           </div>
         </div>
       </div>
