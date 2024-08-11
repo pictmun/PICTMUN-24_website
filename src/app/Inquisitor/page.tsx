@@ -9,7 +9,7 @@ export default function Page() {
                     <img src="images/inquisitor-14.png" className="w-full h-[400px] object-contain" alt="" />
                 </div>
                 <div>
-                    <p className="text-sm lg:text-lg m-5 text-darkblue">
+                    <p className="text-base lg:text-lg m-5 text-darkblue">
                         The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of in-house articles that have been written by the club’s members after carrying out extensive research to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested in getting their work published.
                     </p>
                     <div className="flex flex-col lg:flex-row mt-3 items-center justify-center gap-4">

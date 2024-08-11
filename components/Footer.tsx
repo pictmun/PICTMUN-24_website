@@ -1,4 +1,4 @@
-
+import { FaMedium } from "react-icons/fa";
 import Link from "next/link";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 
@@ -14,12 +14,17 @@ export function Footer() {
           <div className="flex items-center">
             <GrInstagram />
             <div className="w-[10px]"></div>
-            <Link target="_blank" href="https://www.instagram.com/pictmun/" className='text-lg'>@pictmun</Link>
+            <Link target="_blank" href="https://www.instagram.com/pictmun/" className='text-lg hover:text-skin'>@pictmun</Link>
           </div>
           <div className="flex items-center">
             <GrLinkedin />
             <div className="w-[10px]"></div>
-            <Link target="_blank" href="https://www.linkedin.com/company/pict-model-united-nations/mycompany/" className='text-lg'>@PICT Model United Nations</Link>
+            <Link target="_blank" href="https://www.linkedin.com/company/pict-model-united-nations/mycompany/" className='text-lg hover:text-skin'>@PICT Model United Nations</Link>
+          </div>
+            <div className="flex items-center">
+            <FaMedium />
+            <div className="w-[10px]"></div>
+            <Link target="_blank" href="https://medium.com/@pictmun" className='text-lg hover:text-skin'>@pictmun</Link>
           </div>
         </div>
         <div className="md:flex-none md:text-right mt-[10px] md:mt-0">
