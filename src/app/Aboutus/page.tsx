@@ -61,7 +61,7 @@ const Page: React.FC = () => {
             style={{ backgroundColor: '#F9F8F7', opacity: 0.7 }}
             className={`absolute top-10 bottom-20 right-0 w-3/5 flex items-center justify-center transition-transform duration-1000 delay-125 ${isVisible ? 'animate-slideInRight' : 'translate-x-full'}`}
           >
-            <span className="pl-20 pr-20 text-darkblue text-left text-lg leading-5">
+            <span className="pl-20 pr-20 text-darkblue text-left text-lg leading-5 ">
               Donec id vulputate nunc. Donec et placerat nulla. Nunc tempor, est eu cursus finibus, lectus magna venenatis ante, quis sodales mauris sapien nec sem. Vivamus quis diam vel dui hendrerit hendrerit. Vestibulum nec dui sed velit vulputate maximus. Pellentesque imperdiet felis eros, vel laoreet ipsum blandit facilisis. Morbi vel aliquet neque.
             </span>
           </div>

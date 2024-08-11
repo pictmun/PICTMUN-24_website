@@ -72,7 +72,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <button onClick={toggleMobileMenu} className="inline-block md:hidden">
+        <button onClick={toggleMobileMenu} title="close" className="inline-block md:hidden">
           <RiMenu3Fill className="text-3xl text-white pt-[5px] pr-[5px]" />
         </button>
       </div>
