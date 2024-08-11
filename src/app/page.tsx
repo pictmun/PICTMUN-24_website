@@ -35,6 +35,8 @@ export default function Home() {
   return (
     <div className={` overflow-x-hidden overflow-y-auto`}>
       <div className="h-screen bg-darkblue text-white relative">
+
+
         <img src="/images/home-bg.png" alt="hero-banner" className='opacity-40 absolute top-0 left-0 right-0 bottom-0 z-0 w-full h-full object-contain scale-75' />
         <div className='absolute left-0 right-0 top-0 bottom-0 text-center content-center'>
           <h1 className="font-bold text-5xl lg:text-8xl">PICTMUN</h1>
