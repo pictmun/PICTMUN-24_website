@@ -62,9 +62,8 @@ const Page: React.FC = () => {
               isVisible ? 'transform-none' : 'translate-x-full'
             }`}
           >
-            <span className="lg:pl-20 p-10 lg:pr-20 text-center text-darkblue text-lg leading-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies risus sed est tincidunt, quis scelerisque leo viverra.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed, amet necessitatibus, sapiente, ducimus doloremque quasi iusto nihil tempora accusamus hic aliquam fugit accusantium quisquam!
+            <span className="pl-20 pr-20 text-darkblue text-left text-lg leading-5">
+              Donec id vulputate nunc. Donec et placerat nulla. Nunc tempor, est eu cursus finibus, lectus magna venenatis ante, quis sodales mauris sapien nec sem. Vivamus quis diam vel dui hendrerit hendrerit. Vestibulum nec dui sed velit vulputate maximus. Pellentesque imperdiet felis eros, vel laoreet ipsum blandit facilisis. Morbi vel aliquet neque.
             </span>
           </div>
         </div>

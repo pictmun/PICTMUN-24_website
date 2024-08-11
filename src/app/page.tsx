@@ -4,7 +4,6 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Link from 'next/link';
 
 export default function Home() {
   const highlights = [
@@ -42,13 +41,9 @@ export default function Home() {
           <h1 className="text-2xl lg:text-2xl text-zinc-400">Think, Discuss, Prosper</h1>
           <div className="h-[25px]"></div>
           <div>
-            <Link href='/'>
             <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Register</button>
-            </Link>
             <div className='md:hidden h-[15px]' />
-            <Link href='/Events'>
             <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 md:ml-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Events</button>
-            </Link>
           </div>
         </div>
       </div>
@@ -117,7 +112,9 @@ export default function Home() {
         }}></div>
       </div>
       {/* Highlights Section */}
-      <div className="bg-darkblue py-[50px] lg:py-[100px] px-[50px] lg:px-[250px] text-white">
+<div className='bg-darkblue'>
+
+      <div className="bg-white bg-opacity-25 py-[50px] lg:py-[100px] px-[50px] lg:px-[250px] text-white">
         <h2 className="text-3xl lg:text-4xl font-semibold text-center mb-8">Highlights</h2>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -157,6 +154,8 @@ export default function Home() {
           <div className="swiper-button-prev hidden lg:block"></div>
         </Swiper>
       </div>
+</div>
+
 
   
 
