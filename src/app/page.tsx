@@ -46,7 +46,7 @@ export default function Home() {
             <button className="px-[55px] py-[12px] text-md text-yellow-300 rounded-md hover:scale-105 transition-all duration-300 bg-zinc-950 bg-opacity-60 md:mr-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Register</button>
             </Link>
             <div className='md:hidden h-[15px]' />
-            <Link href="/events">
+            <Link href="/Events">
             <button className="px-[55px] py-[12px] text-md rounded-md bg-zinc-950 bg-opacity-60 hover:scale-105 transition-all duration-300 md:ml-[12.5px] border-[1.5px] border-solid border-zinc-950 border-opacity-100 shadow-lg">Events</button>
             </Link>
           </div>
