@@ -2,21 +2,21 @@ import BookCard from "../../../components/Inquisitor/BookCard";
 
 export default function Page() {
     const books = [
-        { imgSrc: 'images/inquisitor/Issue15.png', title: 'Issue 15.0 November 2023',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue14.png', title: 'Issue 14.0 May 2022',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue13.png', title: 'Issue 13.0 January 2022',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue12.png', title: 'Issue 12.0 December 2021',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue11.png', title: 'Issue 11.0 November 2021',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue10.jpg', title: 'Issue 10.0 April 2021',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue9.png', title: 'Issue 9.0 February 2021',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue8.png', title: 'Issue 8.0 January 2021',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue7.jpeg', title: 'Issue 7.0 December 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue6.png', title: 'Issue 6.0 November 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue5.png', title: 'Issue 5.0 October 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue4.png', title: 'Issue 4.0 September 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue3.jpg', title: 'Issue 3.0 August 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/Issue2.jpg', title: 'Issue 2.0 July 2020',dlink:'' },
-        { imgSrc: 'images/inquisitor/issue1.jpg', title: 'Issue 1.0 June 2020',dlink:'' },
+        { imgSrc: 'images/inquisitor/Issue15.png', title: 'Issue 15.0 November 2023',dlink:'/inquisitor/Newsletter_Issue15.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue14.png', title: 'Issue 14.0 May 2022',dlink:'/inquisitor/Newsletter_Issue14.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue13.png', title: 'Issue 13.0 January 2022',dlink:'/inquisitor/Newsletter_Issue13.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue12.png', title: 'Issue 12.0 December 2021',dlink:'/inquisitor/Newsletter_Issue12.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue11.png', title: 'Issue 11.0 November 2021',dlink:'/inquisitor/Newsletter_Issue11.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue10.jpg', title: 'Issue 10.0 April 2021',dlink:'/inquisitor/Newsletter_Issue10.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue9.png', title: 'Issue 9.0 February 2021',dlink:'/inquisitor/Newsletter_Issue9.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue8.png', title: 'Issue 8.0 January 2021',dlink:'/inquisitor/Newsletter_Issue8.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue7.jpeg', title: 'Issue 7.0 December 2020',dlink:'/inquisitor/Newsletter_Issue7.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue6.png', title: 'Issue 6.0 November 2020',dlink:'/inquisitor/Newsletter_Issue6.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue5.png', title: 'Issue 5.0 October 2020',dlink:'/inquisitor/Newsletter_Issue6.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue4.png', title: 'Issue 4.0 September 2020',dlink:'/inquisitor/Newsletter_Issue4.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue3.jpg', title: 'Issue 3.0 August 2020',dlink:'/inquisitor/Newsletter_Issue3.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue2.jpg', title: 'Issue 2.0 July 2020',dlink:'/inquisitor/Newsletter_Issue2.0.pdf' },
+        { imgSrc: 'images/inquisitor/issue1.jpg', title: 'Issue 1.0 June 2020',dlink:'/inquisitor/Newsletter_Issue1.0.pdf' },
     ];
     return (
         <section className="pt-24 bg-darkblue min-h-screen">
