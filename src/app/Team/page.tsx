@@ -2,6 +2,25 @@ import TeamMember from "../../../components/Team/Card";
 
 
 export default function Page() {
+
+  const teamMembers = [
+    { name: 'Anshika Singh', designation: 'USG Design', image: '/images/team/Anshika_Singh.jpg' },
+    { name: 'Anushka Joshi', designation: 'USG Technical', image: '/images/team/Anushka_Joshi.jpg' },
+    { name: 'Sarthak Chaudhari', designation: 'USG Content', image: '/images/team/Sarthak_Chaudhari.jpg' },
+    { name: 'Shrihari Tiwari', designation: 'USG Content', image: '/images/team/Shrihari_Tiwari.jpg' },
+    { name: 'Bismah Shaikh', designation: 'USG Outreach', image: '/images/team/Bismah_Shaikh.jpg' },
+    { name: 'Samiksha Shah', designation: 'USG Outreach', image: '/images/team/s.jpg' },
+    { name: 'Yashveer Tiwari', designation: 'USG Operations', image: '/images/team/Yashveer.jpg' },
+    { name: 'Shrihari Tiwari', designation: 'USG Operations', image: '/images/team/Shrihari_Tiwari.jpg' },
+    { name: 'Samiksha Sarode', designation: 'USG Marketing', image: '/images/team/s.jpg' },
+    { name: 'Satakshi Chaudhari', designation: 'USG Marketing', image: '/images/team/ss.jpg' },
+    { name: 'Anushka Joshi', designation: 'USG Delegate Affairs', image: '/images/team/Anushka_Joshi.jpg' },
+    { name: 'Satakshi Chaudhari', designation: 'USG Delegate Affairs', image: '/images/team/ss.jpg' },
+    { name: 'Sholk Gelgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
+    
+  ];
+  
+
     return( 
 
       <div className="flex flex-col items-center justify-center min-h-screen w-full bg-darkblue relative text-center" style={{
@@ -27,20 +46,14 @@ export default function Page() {
       <h2 className=" text-4xl text-white  relative  py-20 ">Under Secretary General</h2>
   
       <div className="grid grid-cols-1  md:grid-cols-2 md:gap-x-36 md:gap-y-12 gap-10 pb-11 align-baseline">
-      <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Design"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Content"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Content"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Technical"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Technical"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Outreach"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Outreach"} image={"/images/team/Anshika_Singh.jpg"}/>
-      <TeamMember  name={'Anshika Singh'} designation={"USG Operations"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Operations"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Marketing"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Marketing"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Delegate Affairs"} image={"/images/team/Anshika_Singh.jpg"}/>  
-      <TeamMember  name={'Anshika Singh'} designation={"USG Delegate Affairs"} image={"/images/team/Anshika_Singh.jpg"}/>  
- </div>     
+      {teamMembers.map(member => (
+  <TeamMember
+    key={member.name + member.designation} // using name and designation as a key
+    name={member.name}
+    designation={member.designation}
+    image={member.image}
+  />
+))}
+</div>     
 </div>)
   } 
