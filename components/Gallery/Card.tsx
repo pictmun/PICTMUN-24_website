@@ -6,7 +6,7 @@ interface CardProps {
 
 const Gallery: React.FC<CardProps> = ({image}) => {
   return (
-    <div className="min-w-[300px] min-h-[300px] ">
+    <div className="w-[300px] h-[300px] ">
           <img title="gal" className="w-full h-full "src={image} />
     </div>
   )

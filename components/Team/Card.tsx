@@ -10,7 +10,7 @@ interface CardProps {
   const TeamMember: React.FC<CardProps> = ({ name, designation, image }) => {
     return (
       <div className="">
-        <div className=" max-w-[200px] hover:scale-110 transition-all duration-300 max-h-[200px] md:max-w-[250px] md:max-h-[250px]">
+        <div className=" mx-auto max-w-[200px] hover:scale-110 transition-all duration-300 max-h-[200px] md:max-w-[250px] md:max-h-[250px]">
           <img className="w-full h-full rounded-full" src={image} alt={name} />
         </div>
         <div className="info mx-auto text-center hover:text-skin py-[15px] lg:text-2xl text-lg md:text-xl text-white">
