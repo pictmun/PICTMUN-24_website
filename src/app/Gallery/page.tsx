@@ -10,12 +10,12 @@ export default function Page() {
         '/images/Gallery/7.jpg',
         '/images/Gallery/8.jpg',
         '/images/Gallery/9.jpg',
-        '/images/Gallery/4.jpg',
+        '/images/Gallery/4.JPG',
         '/images/Gallery/5.jpg',
         '/images/Gallery/6.jpg',
         '/images/Gallery/1.jpg',
-        '/images/Gallery/2.jpg',
-        '/images/Gallery/3.jpg',
+        '/images/Gallery/2.JPG',
+        '/images/Gallery/3.JPG',
     ];
 
 
