@@ -34,7 +34,7 @@ const Page: React.FC = () => {
       <div>
         <div className="md:w-5/6 w-[90%] relative mx-auto h-[450px] md:mx-0">
           <img
-            src='./images/mathias-reding-yfXhqAW5X0c-unsplash1.jpg'
+            src='/images/About/1.JPG'
             className="w-full h-full object-cover bg-[#232A2F] opacity-50"
             alt="Image"
           />
@@ -52,7 +52,7 @@ const Page: React.FC = () => {
       <div className="flex justify-end mt-20">
         <div className="md:w-5/6 w-[90%] relative h-[450px] mx-auto lg:mx-0">
           <img
-            src='./images/mathias-reding-yfXhqAW5X0c-unsplash1.jpg'
+            src='/images/About/2.JPG'
             className="w-full h-full object-cover bg-[#232A2F] opacity-50"
             alt="Image"
           />
