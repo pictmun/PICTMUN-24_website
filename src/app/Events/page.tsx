@@ -30,11 +30,11 @@ export default function Page() {
         {/* Top one */}
         
         {/* top two */}
-        <img
+        {/* <img
           src="/images/bg-pattern.png"
           alt=""
           className="hidden md:block absolute top-[35%] left-[-50%] lg:top-[55%] w-[900px] overflow-hidden lg:left-[-20%] rotate-[-20deg]"
-        />
+        /> */}
         {/* Card components */}
         <Card
           right={false}

@@ -87,6 +87,12 @@ export default function Home() {
       description: "This is the Highlight 9.",
       image: "images/Home/IMG_9999.jpg", // Replace with actual image
     },
+    {
+      id: 10,
+      title: "Highlight 10",
+      description: "This is the Highlight 10.",
+      image: "images/Home/ptk.jpg", // Replace with actual image
+    },
   ]
   return (
     <div className={` overflow-x-hidden overflow-y-auto`}>
@@ -147,38 +153,42 @@ export default function Home() {
         </div>
         <div className="flex-none h-[30px] lg:h-[50px]"></div>
         <div className="grid grid-cols-2 h-full gap-[75px]">
-          <div className="col-span-1 bg-zinc-900 bg-opacity-30 h-full rounded-md shadow-lg hidden lg:block ">
+        <div className="col-span-1 bg-zinc-900 bg-opacity-30 h-full rounded-md shadow-md hidden lg:block my-auto">
 
-           <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            disabledClass: 'swiper-button-disabled',
-          }}
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 5000 }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            }
-          }}
-          centeredSlides={true}
-          loop={true}
-        >
-          {inquisitors.map((highlight) => (
-            <SwiperSlide key={highlight.id}>
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
-                <img src={highlight.image} alt={highlight.title} className=" h-64 object-cover mx-auto my-auto" />
-                
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+<Swiper 
+  modules={[Navigation, Pagination, Autoplay]}
+  spaceBetween={50}
+  slidesPerView={1}
+  navigation={{
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    disabledClass: 'swiper-button-disabled',
+  }}
+  pagination={{ clickable: true }}
+  autoplay={{ delay: 5000 }}
+  breakpoints={{
+    640: {
+      slidesPerView: 1,
+    }
+  }}
+  centeredSlides={true}
+  loop={true}
+>
+  {inquisitors.map((highlight) => (
+    <SwiperSlide key={highlight.id}>
+      <div className="flex justify-center items-center h-full">
+        <img 
+          src={highlight.image} 
+          alt={highlight.title} 
+          className="h-80 object-cover" 
+        />
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
-          </div>
+</div>
+
           <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
             <div className='w-full h-full flex flex-col'>
               <div className="grow"></div>

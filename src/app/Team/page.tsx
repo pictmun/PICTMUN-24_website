@@ -9,14 +9,14 @@ export default function Page() {
     { name: 'Sarthak Chaudhari', designation: 'USG Content', image: '/images/team/Sarthak_Chaudhari.jpg' },
     { name: 'Shrihari Tiwari', designation: 'USG Content', image: '/images/team/Shrihari_Tiwari.jpg' },
     { name: 'Bismah Shaikh', designation: 'USG Outreach', image: '/images/team/Bismah_Shaikh.jpg' },
-    { name: 'Samiksha Shah', designation: 'USG Outreach', image: '/images/team/s.jpg' },
+    { name: 'Samiksha Sarode', designation: 'USG Outreach', image: '/images/team/s.jpg' },
     { name: 'Yashveer Tiwari', designation: 'USG Operations', image: '/images/team/Yashveer.jpg' },
     { name: 'Shrihari Tiwari', designation: 'USG Operations', image: '/images/team/Shrihari_Tiwari.jpg' },
     { name: 'Samiksha Sarode', designation: 'USG Marketing', image: '/images/team/s.jpg' },
-    { name: 'Satakshi Chaudhari', designation: 'USG Marketing', image: '/images/team/ss.jpg' },
+    { name: 'Shatakshi Chaudhari', designation: 'USG Marketing', image: '/images/team/ss.jpg' },
     { name: 'Anushka Joshi', designation: 'USG Delegate Affairs', image: '/images/team/Anushka_Joshi.jpg' },
-    { name: 'Satakshi Chaudhari', designation: 'USG Delegate Affairs', image: '/images/team/ss.jpg' },
-    { name: 'Sholk Gelgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
+    { name: 'Shatakshi Chaudhari', designation: 'USG Delegate Affairs', image: '/images/team/ss.jpg' },
+    { name: 'Shlok Belgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
     
   ];
   
