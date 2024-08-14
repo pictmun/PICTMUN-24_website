@@ -26,8 +26,9 @@ export default function Page() {
                     <img src="images/inquisitor/Issue16.jpg" className="w-full h-[400px] object-contain" alt="" />
                 </div>
                 <div>
-                    <p className="text-base lg:text-lg m-5 text-darkblue">
-                        The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of in-house articles that have been written by the club’s members after carrying out extensive research to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested in getting their work published.
+                    <p className="text-base lg:text-base m-5 text-darkblue text-justify">
+                    The 16th edition of PICT MUN's newsletter “The Inquisitor” was published digitally, featuring 6 articles with topics brewing from the recently conducted Lok Sabha elections, the comparison of the Belt and Road Initiative of China (BRI) and the newly established India Middle East Economic Corridor (IMEC) and the how modernization has helped improve the infrastructure in the Indian Army owing to the expansion of army into creating specialist in technological fields. It also features a special section featuring a deeper look into the range of MP’s elected, evaluating them based on parameters such as economic and linguistic standpoints.
+                    
                     </p>
                     <div className="flex flex-col lg:flex-row mt-3 items-center justify-center gap-4">
                         <a

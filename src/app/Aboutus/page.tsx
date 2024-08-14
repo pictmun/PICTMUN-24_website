@@ -41,9 +41,8 @@ const Page: React.FC = () => {
           <div
             className="absolute top-0 bottom-0 lg:w-3/5 flex items-center justify-center overflow-hidden left-0 bg-[#F9F8F7] opacity-70 animate-slideInLeft"
           >
-            <span className="lg:pl-20 p-10 lg:pr-20 text-center text-darkblue text-lg leading-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies risus sed est tincidunt, quis scelerisque leo viverra.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed, amet necessitatibus, sapiente, ducimus doloremque quasi iusto nihil tempora accusamus hic aliquam fugit accusantium quisquam!
+            <span className="lg:pl-20 p-10 lg:pr-20 text-justify text-darkblue text-lg leading-5">
+            Welcome to PICT Model United Nations (MUN), where the power of dialogue and the art of diplomacy come together to address the most pressing global issues. Guided by our motto, <b>Think. Discuss. Prosper.</b>, we are committed to fostering an environment where thoughtful discussion and open-minded debate pave the way for innovative solutions. At PICT MUN, we believe that every conversation has the potential to inspire change and that by engaging in meaningful dialogue, our members can contribute to a more peaceful and prosperous world.
             </span>
           </div>
         </div>
@@ -62,8 +61,9 @@ const Page: React.FC = () => {
               isVisible ? 'transform-none' : 'translate-x-full'
             }`}
           >
-            <span className="pl-20 pr-20 text-darkblue text-left text-lg leading-5">
-              Donec id vulputate nunc. Donec et placerat nulla. Nunc tempor, est eu cursus finibus, lectus magna venenatis ante, quis sodales mauris sapien nec sem. Vivamus quis diam vel dui hendrerit hendrerit. Vestibulum nec dui sed velit vulputate maximus. Pellentesque imperdiet felis eros, vel laoreet ipsum blandit facilisis. Morbi vel aliquet neque.
+            <span className="pl-20 pr-20 text-darkblue text-justify text-lg leading-5">
+            Our organization is built on the universal principle of tolerance, emphasizing the importance of understanding and respecting diverse perspectives. Through our events, conferences, and workshops, we encourage our members to think critically, discuss passionately, and work collaboratively towards common goals. Whether you are a seasoned delegate or new to the world of MUN, PICT MUN is a platform where you can hone your skills, broaden your horizons, and become a part of a global community dedicated to making a difference. Join us as we explore the power of dialogue and work towards a brighter future for all.
+            
             </span>
           </div>
         </div>

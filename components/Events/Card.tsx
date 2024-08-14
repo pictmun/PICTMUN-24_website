@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({ right, title, description, bgImages }) => {
         {/* Content Overlay */}
         <div className="absolute inset-0 flex flex-col justify-center p-5 md:p-12 text-midblue bg-white bg-opacity-60 z-10">
           <h2 className="text-center text-3xl font-bold my-5">{title}</h2>
-          <p className="text-left text-lg leading-5">{description}</p>
+          <p className="text-justify text-lg leading-5">{description}</p>
         </div>
       </div>
     </div>

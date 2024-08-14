@@ -40,7 +40,8 @@ export default function Page() {
           right={false}
           title={"PICTMUN Conference"}
           description={
-            "The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."
+            "PICT MUN conference is one of the most anticipated MUN conferences in the Pune circuit. At PICT MUN, we strive to create an environment that fosters thoughtful dialogue, mutual respect, and intellectual growth. Delegates from all over the country and even abroad, convene on the hottest of agendas; all driven by a shared passion for diplomacy, debate, and global cooperation. Whether you are a seasoned MUN-er; or a newbie, the PICT MUN promises to be an experience that'll leave you forever enthralled!"
+          
           }
           bgImages={conference}
         />
@@ -48,7 +49,8 @@ export default function Page() {
           right={true}
           title={"PICT Intra-MUN"}
           description={
-            "The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."
+            "PICT Intra MUN is an exclusive event for the students of PICT. Its underlying intent is to deepen the understanding of the United Nations and foster leadership, public speaking and diplomacy skills of the students. The event is an invigorating embodiment of the motto which we hold very dear to our hearts - think, discuss, prosper."
+
           }
           bgImages={intra}
         />
@@ -56,7 +58,7 @@ export default function Page() {
           right={false}
           title={"AdLib"}
           description={
-            "The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."
+            "ADLIB is an annual convivial competition organised by the PICT MUN, exclusively for PICTians. It consists of multiple stages crafted to simulate events like press conferences, UN committees, roles of journalists and diplomats. After managing to succeed the initial rounds, the participants head towards exhilarating stages that challenge their mettle, to test journalistic skills and strategic communication techniques in them."
           }
           bgImages={adlib}
         />

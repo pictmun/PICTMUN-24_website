@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-darkblue'>
-      <div className="relative lg:h-screen text-zinc-200 bg-white bg-opacity-25 p-[50px] lg:py-[100px] lg:px-[250px] flex flex-col">
+      <div className="relative lg:h-screen text-zinc-200 bg-white bg-opacity-25 p-[50px] lg:py-[px] lg:px-[250px] flex flex-col">
        
         <div className="text-center">
           <h1 className="text-3xl lg:text-4xl font-[600]">About the Club</h1>
@@ -122,8 +122,11 @@ export default function Home() {
           <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
             <div className='w-full h-full flex flex-col'>
               <div className="grow"></div>
-              <p className='leading-7 text-base lg:text-base text-[#ADB8BB]'>
-                The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
+              <p className='leading-7 text-base lg:text-base text-[#ADB8BB] text-justify'>
+              PICTMUN is a prestigious club where students immerse themselves in the art of diplomacy, debate, and international relations. The club provides a dynamic environment for delegates to engage in discussions on global issues, develop critical thinking skills, and refine public speaking.
+              <br />
+              Our conferences attract a diverse group of passionate students, all eager to contribute and propose innovative solutions to pressing global challenges.
+              We pride ourselves in fostering an intellectually stimulating atmosphere that incorporates learning, leadership, and the pursuit of excellence
               </p>
               <div className="grow"></div>
             </div>
@@ -179,8 +182,10 @@ export default function Home() {
           <div className="col-span-2 lg:col-span-1 text-center lg:text-start">
             <div className='w-full h-full flex flex-col'>
               <div className="grow"></div>
-              <p className='leading-7 text-base lg:text-base text-[#ADB8BB]'>
-                The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor’ from scratch. It consists of In-house articles that have been written by the club’s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published.
+              <p className='leading-7 text-base lg:text-base text-[#ADB8BB] text-justify'>
+              The Inquisitor is the official, bimonthly magazine of PICTMUN offering perspicacious perspectives on global affairs, diplomacy, and geopolitics. It serves as a platform for our members to explore and analyze pressing concerns, providing readers with thought-provoking articles.
+              Our magazine is crafted by a team of passionate students committed to delivering high-quality content. Each edition features a diverse range of articles that inspire critical thinking and intellectual curiosity
+              
               </p>
               <div className="grow"></div>
             </div>
