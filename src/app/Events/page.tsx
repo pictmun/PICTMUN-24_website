@@ -66,7 +66,7 @@ export default function Page() {
           right={true}
           title={"FE Induction"}
           description={
-            "The PICT MUN team has developed Issue 14.0 of ‘The Inquisitor from scratch. It consists of In-house articles that have been written by the club`s members after carrying out extensive research in order to serve reports to the readers with the maximum possible factual accuracy. We plan on expanding the outreach of this esteemed newsletter with each edition and would love to accept articles from individuals who would be interested to get their work published."
+            "FE Induction lays the foundation for welcoming newly admitted first year students into PICT MUN. It provides a platform for existing team members to share their experiences and journey of diplomacy, through the various club activities. The team's impressive track record is unveiled through achievements and accolades. This serves as both a testament to the team's past successes and an inspiring beacon for the future."
           }
           bgImages={FEinduction}
         />
