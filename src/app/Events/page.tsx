@@ -40,7 +40,7 @@ export default function Page() {
           right={false}
           title={"PICTMUN Conference"}
           description={
-            "PICT MUN conference is one of the most anticipated MUN conferences in the Pune circuit. At PICT MUN, we strive to create an environment that fosters thoughtful dialogue, mutual respect, and intellectual growth. Delegates from all over the country and even abroad, convene on the hottest of agendas; all driven by a shared passion for diplomacy, debate, and global cooperation. Whether you are a seasoned MUN-er; or a newbie, the PICT MUN promises to be an experience that'll leave you forever enthralled!"
+            "PICT MUN conference is one of the most anticipated MUN conferences in the Pune circuit. At PICT MUN, we strive to create an environment that fosters thoughtful dialogue, mutual respect, and intellectual growth. Delegates from all over the country and even abroad, convene on the hottest of agendas; all driven by a shared passion for diplomacy, debate, and global cooperation. Whether you are a seasoned MUN-er; or a newbie, the PICT MUN promises to be an experience that will leave you forever enthralled!"
           
           }
           bgImages={conference}
@@ -66,7 +66,7 @@ export default function Page() {
           right={true}
           title={"FE Induction"}
           description={
-            "FE Induction lays the foundation for welcoming newly admitted first year students into PICT MUN. It provides a platform for existing team members to share their experiences and journey of diplomacy, through the various club activities. The team's impressive track record is unveiled through achievements and accolades. This serves as both a testament to the team's past successes and an inspiring beacon for the future."
+            "FE Induction lays the foundation for welcoming newly admitted first year students into PICT MUN. It provides a platform for existing team members to share their experiences and journey of diplomacy, through the various club activities. The team impressive track record is unveiled through achievements and accolades. This serves as both a testament to the team past successes and an inspiring beacon for the future."
           }
           bgImages={FEinduction}
         />
