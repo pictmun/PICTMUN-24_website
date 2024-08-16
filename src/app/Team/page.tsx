@@ -5,7 +5,6 @@ export default function Page() {
 
   const teamMembers = [
     { name: 'Anshika Singh', designation: 'USG Design', image: '/images/team/Anshika_Singh.jpg' },
-    { name: 'Anushka Joshi', designation: 'USG Technical', image: '/images/team/Anushka_Joshi.jpg' },
     { name: 'Sarthak Chaudhari', designation: 'USG Content', image: '/images/team/Sarthak_Chaudhari.jpg' },
     { name: 'Shrihari Tiwari', designation: 'USG Content', image: '/images/team/Shrihari_Tiwari.jpg' },
     { name: 'Bismah Shaikh', designation: 'USG Outreach', image: '/images/team/Bismah_Shaikh.jpg' },
@@ -17,6 +16,7 @@ export default function Page() {
     { name: 'Anushka Joshi', designation: 'USG Delegate Affairs', image: '/images/team/Anushka_Joshi.jpg' },
     { name: 'Shatakshi Chaudhari', designation: 'USG Delegate Affairs', image: '/images/team/ss.jpg' },
     { name: 'Shlok Belgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
+    { name: 'Anushka Joshi', designation: 'USG Technical', image: '/images/team/Anushka_Joshi.jpg' },
     
   ];
   
