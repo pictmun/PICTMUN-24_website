@@ -4,6 +4,7 @@ import TeamMember from "../../../components/Team/Card";
 export default function Page() {
 
   const teamMembers = [
+    { name: 'Shlok Belgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
     { name: 'Anshika Singh', designation: 'USG Design', image: '/images/team/Anshika_Singh.jpg' },
     { name: 'Sarthak Chaudhari', designation: 'USG Content', image: '/images/team/Sarthak_Chaudhari.jpg' },
     { name: 'Shrihari Tiwari', designation: 'USG Content', image: '/images/team/Shrihari_Tiwari.jpg' },
@@ -15,7 +16,6 @@ export default function Page() {
     { name: 'Shatakshi Chaudhari', designation: 'USG Marketing', image: '/images/team/ss.jpg' },
     { name: 'Anushka Joshi', designation: 'USG Delegate Affairs', image: '/images/team/Anushka_Joshi.jpg' },
     { name: 'Shatakshi Chaudhari', designation: 'USG Delegate Affairs', image: '/images/team/ss.jpg' },
-    { name: 'Shlok Belgamwar', designation: 'USG Design', image: '/images/team/sh.jpg' },
     { name: 'Anushka Joshi', designation: 'USG Technical', image: '/images/team/Anushka_Joshi.jpg' },
     
   ];
@@ -31,7 +31,7 @@ export default function Page() {
       }} >
 
       {/*The secretariat section */}
-      <h1 className=" text-4xl font-bold text-white relative pt-24 ">Meet the Team</h1><br></br>
+      <h1 className=" text-4xl font-bold text-white relative pt-24 ">Meet the Team 2023</h1><br></br>
       <h2 className="  text-4xl text-white  relative  pb-12 " >The Secretariat</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20 pb-11 align-baseline">
       <TeamMember  name={'Rhea Shah'} designation={"Secretary General"} image={"/images/team/RHEA.jpeg"}/>
