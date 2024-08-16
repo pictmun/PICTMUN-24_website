@@ -29,7 +29,7 @@ export function Footer() {
         </div>
         <div className="md:flex-none md:text-right mt-[10px] md:mt-0">
           <h1 className='text-lg'>Nirbhay Shah - <Link target="_blank" href="tel:+917020899506" className='text-lg  hover:text-skin hover:underline'>+917020899506</Link></h1>
-          <h1 className='text-lg'>Sholka Shetty - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-skin hover:underline'>+918591605958</Link></h1>
+          <h1 className='text-lg'>Shloka Shetty - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-skin hover:underline'>+918591605958</Link></h1>
         </div>
       </div>
     </footer>
