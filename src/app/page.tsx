@@ -10,27 +10,27 @@ export default function Home() {
   const inquisitors = [
   {
     id: 1,
+    title: "Inquisitor 18",
+    description: "This is the 18 Inquisitor.",
+    image: "images/inquisitor/Issue18.png", // Replace with actual image
+  },
+  {
+    id: 2,
+    title: "Inquisitor 17",
+    description: "This is the 17 Inquisitor.",
+    image: "images/inquisitor/Issue17.jpeg", // Replace with actual image
+  },
+  {
+    id: 3,
     title: "Inquisitor 16",
     description: "This is the 16 Inquisitor.",
     image: "images/inquisitor/Issue16.jpg", // Replace with actual image
   },
-  {
-    id: 2,
+{
+    id: 4,
     title: "Inquisitor 15",
     description: "This is the 15 Inquisitor.",
     image: "images/inquisitor/Issue15.png", // Replace with actual image
-  },
-  {
-    id: 3,
-    title: "Inquisitor 14",
-    description: "This is the 14 Inquisitor.",
-    image: "images/inquisitor/Issue14.png", // Replace with actual image
-  },
-{
-    id: 4,
-    title: "Inquisitor 13",
-    description: "This is the 13 Inquisitor.",
-    image: "images/inquisitor/Issue13.png", // Replace with actual image
   },]
   const highlights = [
     {
