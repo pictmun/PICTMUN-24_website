@@ -2,6 +2,8 @@ import BookCard from "../../../components/Inquisitor/BookCard";
 
 export default function Page() {
     const books = [
+        { imgSrc: 'images/inquisitor/Issue17.jpeg', title: 'Issue 17.0 September 2024',dlink:'/inquisitor/Newsletter_Issue17.0.pdf' },
+        { imgSrc: 'images/inquisitor/Issue16.jpg', title: 'Issue 16.0 July 2024',dlink:'/inquisitor/Newsletter_Issue16.0.pdf' },
         { imgSrc: 'images/inquisitor/Issue15.png', title: 'Issue 15.0 November 2023',dlink:'/inquisitor/Newsletter_Issue15.0.pdf' },
         { imgSrc: 'images/inquisitor/Issue14.png', title: 'Issue 14.0 May 2022',dlink:'/inquisitor/Newsletter_Issue14.0.pdf' },
         { imgSrc: 'images/inquisitor/Issue13.png', title: 'Issue 13.0 January 2022',dlink:'/inquisitor/Newsletter_Issue13.0.pdf' },
@@ -23,16 +25,16 @@ export default function Page() {
             <h1 className="text-5xl mb-20 text-center font-bold text-white">Our Newsletter - Inquisitor</h1>
             <div className="bg-white/30 w-[90%] lg:w-[75%] rounded-xl p-10 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div>
-                    <img src="images/inquisitor/Issue16.jpg" className="w-full h-[400px] object-contain" alt="" />
+                    <img src="images/inquisitor/Issue18.png" className="w-full h-[400px] object-contain" alt="" />
                 </div>
                 <div>
                     <p className="text-base lg:text-base m-5 text-darkblue text-justify">
-                    The 16th edition of PICT MUN&#39;s newsletter “The Inquisitor” was published digitally, featuring 6 articles with topics brewing from the recently conducted Lok Sabha elections, the comparison of the Belt and Road Initiative of China (BRI) and the newly established India Middle East Economic Corridor (IMEC) and the how modernization has helped improve the infrastructure in the Indian Army owing to the expansion of army into creating specialist in technological fields. It also features a special section featuring a deeper look into the range of MP&#39;s elected, evaluating them based on parameters such as economic and linguistic standpoints.
+                    The 18th edition of PICT MUN&#39;s newsletter “The Inquisitor” was published digitally, featuring 6 articles with topics brewing from the recently conducted Lok Sabha elections, the comparison of the Belt and Road Initiative of China (BRI) and the newly established India Middle East Economic Corridor (IMEC) and the how modernization has helped improve the infrastructure in the Indian Army owing to the expansion of army into creating specialist in technological fields. It also features a special section featuring a deeper look into the range of MP&#39;s elected, evaluating them based on parameters such as economic and linguistic standpoints.
                     
                     </p>
                     <div className="flex flex-col lg:flex-row mt-3 items-center justify-center gap-4">
                         <a
-                        href='/inquisitor/Newsletter_Issue16.0.pdf'
+                        href='/inquisitor/Newsletter_Issue18.0.pdf'
                         download
                         >
 
@@ -41,7 +43,7 @@ export default function Page() {
                         </button>
                         </a>
                         <a
-                        href='/inquisitor/Newsletter_Issue16.0.pdf'
+                        href='/inquisitor/Newsletter_Issue18.0.pdf'
                         >
                         <button className="px-12 text-white py-2 text-md rounded-md bg-zinc-950 bg-opacity-80 border-[1.5px] border-zinc-950 shadow-lg transition-all duration-300 ease-in-out hover:bg-opacity-100 hover:shadow-xl hover:scale-105">
                             Read Online
